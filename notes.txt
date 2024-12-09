@@ -1,0 +1,49 @@
+HTML
++++++++++
+Boiler Plate code
+Tags
+elements 
+h1-h6 p b i sub sup ol ul li br hr a input img video audio html5 semantic tags, Div & Span
+id, class
+
+nav -> navigration
+header-> first section of the web page 
+main -> entire website
+section-> pages of the website
+footer -> footer
+article -> sub elements
+aside -> side element 
+audio 
+video
+
+CSS 
+
+1. Internal CSS
+2. Inline CSS
+3. External CSS
+
+color = color of the content
+background-color => BG of the content's color
+
+font-family
+color / bgclr
+font-size
+font-height
+line-height
+text transform ---
+padding
+margin
+border
+display ---
+position ---
+background --
+
+flex, grid
+
+pseudo-elements
+pseudo-classes
+
+Animation
+
+units - px, %, vw, vh, em, rem
+max width & max height
