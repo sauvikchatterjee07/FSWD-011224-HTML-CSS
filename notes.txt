@@ -47,3 +47,28 @@ Animation
 
 units - px, %, vw, vh, em, rem
 max width & max height
+
+pseudo-elements:
+
+    ::before
+    ::after
+    ::first-line
+    ::first-letter
+    ::selection
+
+pseudo-class
+
+    :hover
+    :active
+    :focus
+    :nth-child(2n)
+    :nth-last-child(n)
+
+
+Position:
+
+static
+relative
+absolute
+fixed
+sticky
