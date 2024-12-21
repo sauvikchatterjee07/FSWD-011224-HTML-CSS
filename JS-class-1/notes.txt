@@ -1,0 +1,10 @@
+Brenden Eich -> 10 days -> netscape -> 1995
+Original Name: Mocha -> LiveScript -> JavaScript
+
+ECMASCRIPT -> 1996
+
+1997 -> ES1 -> First Standardization
+1999 -> ES3
+2009 -> ES5
+2015 -> ES6(LTS) -> Arrow Functions, Template Literals
+2016 -> ES7

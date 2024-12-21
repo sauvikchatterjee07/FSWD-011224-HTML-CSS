@@ -1,30 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-.container{
+/* .container{
     background-color: brown;
     height: 100%;
     width: 100%;
     padding: 0.1px;
-    /* display: flex;
+    display: flex;
     justify-content: center ;
-    align-items: center; */
-    /* flex-direction: row; */
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* flex-flow: row wrap; */
+    flex-flow: row wrap;
     position: relative;
     
+} */
+
+.container {
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+    padding: 0.1px;
+    /* overflow: hidden; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+
+    grid-template-areas: "header header header header"
+        "lsb m m rsb"
+        "lsb m m rsb"
+        "f f f f";
 }
 
-.box{
+.box {
+    border: 2px solid black;
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    /* background-color: #8cbf00; */
+}
+
+#box-1 {
+    background-color: aliceblue;
+    grid-area: header;
+}
+
+#box-2 {
+    background-color: aliceblue;
+    grid-area: lsb;
+}
+
+#box-3 {
+    background-color: aliceblue;
+    grid-area: rsb;
+}
+
+#box-4 {
+    background-color: aliceblue;
+    grid-area: f;
+}
+
+#box-5 {
+    background-color: rgb(87, 140, 187);
+    grid-area: m;
+}
+
+
+
+/*#box-5{
+    background-color: antiquewhite;
+    align-self: end;
+    justify-self: center;
+/* grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+/* grid-column: 1 / 4;
+    grid-row: 1 / 4; */
+/* grid-area: m; */
+
+
+/* } */
+
+/* .box{
     border: 2px solid black;
     margin: 10px;
     background-color:#8cbf00;
@@ -40,10 +112,10 @@ html,body{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
-}
+} */
 
 /* creation of animation */
-@keyframes animate {
+/* @keyframes animate {
     0%{
         left: 0;
         top: 0;
@@ -72,7 +144,7 @@ html,body{
         top: 0;
         rotate: 450deg;
     }
-}
+} */
 
 /* #box-1{
     flex-grow: 0.1;
@@ -153,4 +225,3 @@ html,body{
 /* 1. Creation of the animation
 2. Applying that animation
  */
-
