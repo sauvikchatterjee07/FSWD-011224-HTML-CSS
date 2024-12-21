@@ -107,7 +107,7 @@ body {
     justify-content: center;
     position: absolute;
     animation-name: animate;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
