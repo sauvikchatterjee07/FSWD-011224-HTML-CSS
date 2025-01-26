@@ -95,102 +95,26 @@
 //     console.log("Very Good Morning");
 // }, 2000);
 
-// function callMe(b){
-//     let a = 20;
+function callMe(b){
+    let a = 20;
     
-//     let func = ()=>{
-//         console.log("3");
-//         console.log(a+b);
-//     }
+    let func = ()=>{
+        console.log("3");
+        console.log(a+b);
+    }
     
 
-//     console.log("1");
-//     b++;
-//     console.log("2");
-//     setTimeout(func, 3000);
-//     console.log("4");
-//     a++;
-// }
-
-// let a = 3;
-
-// callMe(a+2);
-
-
-// console.log("0");
-
-// setTimeout(() => {
-//     console.log("4");
-// }, 4000);
-
-// queueMicrotask(()=>{
-//     console.log("1");
-// })
-
-// console.log("2");
-
-
-
-// class Prom{
-
-//     constructor(executor){
-//         executor(a, b)
-//     }
-
-//     let executor = (a, b)=>{
-//         if(){
-//             a()
-//         }
-//         {
-//             b()
-//         }
-//     }
-
-//     a {
-
-//     }
-
-//     b {
-
-//     }
-// };
-
-
-let p1 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        reject();
-    }, 4000)
-});
-
-console.log(p1);
-
-function successCallBack(){
-    console.log("Success");
-}
-function successCallBack1(){
-    console.log("Successsss1111");
-}
-function successCallBack2(){
-    console.log("Successsss2222");
+    console.log("1");
+    b++;
+    console.log("2");
+    setTimeout(func, 3000);
+    console.log("4");
+    a++;
 }
 
-function errorCallBack(){
-    console.log("Errorrrrrr");
-}
-function errorCallBack1(){
-    console.log("Errorrrrr1111");
-}
-function errorCallBack2(){
-    console.log("Errorrrrr2222");
-}
+let a = 3;
 
-// p1.then(successCallBack).then(successCallBack1).then(successCallBack2);
-p1.catch(errorCallBack).then(errorCallBack1).then(errorCallBack2);
-
-
-// .then() & .catch()
-
-
+callMe(a+2);
 
 
 
