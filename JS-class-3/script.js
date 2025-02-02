@@ -156,39 +156,69 @@
 // };
 
 
-let p1 = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        reject();
-    }, 4000)
-});
+// let p1 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         reject();
+//     }, 4000)
+// });
 
-console.log(p1);
+// console.log(p1);
 
-function successCallBack(){
-    console.log("Success");
-}
-function successCallBack1(){
-    console.log("Successsss1111");
-}
-function successCallBack2(){
-    console.log("Successsss2222");
-}
+// function successCallBack(){
+//     console.log("Success");
+// }
+// function successCallBack1(){
+//     console.log("Successsss1111");
+// }
+// function successCallBack2(){
+//     console.log("Successsss2222");
+// }
 
-function errorCallBack(){
-    console.log("Errorrrrrr");
-}
-function errorCallBack1(){
-    console.log("Errorrrrr1111");
-}
-function errorCallBack2(){
-    console.log("Errorrrrr2222");
-}
+// function errorCallBack(){
+//     console.log("Errorrrrrr");
+// }
+// function errorCallBack1(){
+//     console.log("Errorrrrr1111");
+// }
+// function errorCallBack2(){
+//     console.log("Errorrrrr2222");
+// }
 
 // p1.then(successCallBack).then(successCallBack1).then(successCallBack2);
-p1.catch(errorCallBack).then(errorCallBack1).then(errorCallBack2);
+// p1.catch(errorCallBack).then(errorCallBack1).then(errorCallBack2);
+
+// let errProm = p1.catch(errorCallBack);
+// let errProm2 = errProm.then(errorCallBack1);
+// errProm2.then(errorCallBack2);
 
 
 // .then() & .catch()
+
+// GET https://api.postalpincode.in/pincode/{PINCODE}
+
+// let prom1 = fetch("https://api.postalpincode.in/pincode/700124");
+
+// prom1.then((response)=> response.json()).then(data=>console.log(data));
+
+
+const PINCODE = "713102"
+
+async function getData(pin){
+    let p1 = await fetch(`https://api.postalpincode.in/pincode/${PINCODE}`);
+
+    let p2 = await p1.json();
+
+    let arr = p2[0].PostOffice;
+
+    arr.forEach(element => {
+        console.log(element.Name + " ===> " + element.District)
+    });
+
+}
+
+getData(PINCODE);
+
+
 
 
 
